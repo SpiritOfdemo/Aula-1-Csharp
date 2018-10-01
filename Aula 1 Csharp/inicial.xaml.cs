@@ -16,14 +16,20 @@ using System.Windows.Shapes;
 namespace Aula_1_Csharp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class inicial : Page
     {
-        public MainWindow()
+        public inicial()
         {
             InitializeComponent();
-            Content = new inicial();
+        }
+
+        private void BotaoIniciar_Click(object sender, RoutedEventArgs e)
+        {
+            var nomesdouser = new Page1();
+
+            this.Content = nomesdouser;
         }
     }
 }
